@@ -30,7 +30,10 @@ to the digital road network to clean up this data or attach data to it.
 
 ### Input format
 
-The supported input format is [GPX 1.1](http://www.topografix.com/GPX/1/1/) (application/gpx+xml). A json format is under work.
+The supported input formats are [GPX 1.1](http://www.topografix.com/GPX/1/1/) (application/gpx+xml) and a custom CSV format. A json format is under work.
+
+The CSV file should have two columns called "latitude" and "longitude". Their
+order does not matter. The file must have column headers.
 
 ### Parameters
 
@@ -38,7 +41,7 @@ All parameters are shown in the following table:
 
 Parameter   | Default | Description
 :-----------|:--------|:-----------
-gps_accuracy| 50      | The precision of the GPS locations in meters, from minimum of 5 to maximum 100.
+gps_accuracy| 40      | The precision of the GPS locations in meters, from minimum of 5 to maximum 100.
 vehicle     | car     | The vehicle for which the route should be snapped. See [here](./supported-vehicle-profiles.md) for all options.
 locale      | en      | The locale of the resulting instructions
 type        | json    | The output format, can be gpx or json.
@@ -46,12 +49,36 @@ debug       | false   | If true, the output will be formated.
 
 Further parameters from the [Routing API](routing.md#parameters) do apply here too.
 
+#### CSV Input
+
+Following additional parameters are supported for the CSV input format:
+
+Parameter           | Default | Description
+:-------------------|:--------|:-----------
+csv_input.separator | ;       | column separator
+csv_input.quoteChar | "       | quotation character
+
+#### CSV Output
+
+Following additional parameter is supported for the CSV output format:
+
+Parameter            | Default | Description
+:--------------------|:--------|:-----------
+csv_output.separator | ;       | column separator
+
+
 ### Limits and Counts
 
 The cost for one request depends on the number of GPS location and is documented [here](FAQ.md).
 
 One request should not exceed the Map Matching API location limit depending on the package, 
 see the pricing in our dashboard.
+
+### CSV Output
+
+The map matching API supports a CSV output format. The CSV files contain two columns `latitude` and `longitude`.
+They have a column header. Columns are separated by `;` by default but you can use the query parameters to request
+a different character.
 
 ### JSON Output
 
