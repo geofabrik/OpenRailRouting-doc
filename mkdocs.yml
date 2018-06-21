@@ -9,7 +9,7 @@ pages:
 - API parts:
   - Routing API: routing.md
 #  - Route Optimization API: route-optimization.md  
-  - Geocoding API: geocoding.md
+#  - Geocoding API: geocoding.md
   - Map Matching API: map-matching.md
 #  - Isochrone API: isochrone.md
 #  - Matrix API: matrix.md
