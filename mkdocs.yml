@@ -1,23 +1,28 @@
 site_name: GraphHopper Directions API Documentation
 site_description: GraphHopper Directions API
 site_favicon: https://graphhopper.com/favicon.ico
+repo_url: https://github.com/geofabrik/railway-routing-api/
 docs_dir: .
+include_next_prev: False
 pages:
 - Overview: index.md
 - API parts:
   - Routing API: routing.md
-  - Route Optimization API: route-optimization.md  
+#  - Route Optimization API: route-optimization.md  
   - Geocoding API: geocoding.md
   - Map Matching API: map-matching.md
-  - Isochrone API: isochrone.md
-  - Matrix API: matrix.md
+#  - Isochrone API: isochrone.md
+#  - Matrix API: matrix.md
 - Attribution: attribution.md
 - Vehicles: supported-vehicle-profiles.md
-- FAQ: FAQ.md
-extra_css: 
-  - https://www.graphhopper.com/wp-content/themes/graphhopper/css/uikit.min.css
-  - https://www.graphhopper.com/wp-content/themes/graphhopper/css/gh.css
-  - css/custom.css
-extra_javascript:
-  - js/custom.js
-theme: flatly
+#- FAQ: FAQ.md
+#extra_css: 
+#  - https://www.graphhopper.com/wp-content/themes/graphhopper/css/uikit.min.css
+#  - https://www.graphhopper.com/wp-content/themes/graphhopper/css/gh.css
+#  - css/custom.css
+#  - css/style.css
+#extra_javascript:
+#  - js/custom.js
+# almost all other themes use Google Fonts
+theme: mkdocs
+theme_dir: custom_theme
