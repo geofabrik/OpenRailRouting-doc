@@ -28,10 +28,6 @@ If you have problems or questions please see the [FAQ.md](FAQ.md) or [contact us
 
 Or search [our public forum](https://discuss.graphhopper.com/c/directions-api).
 
-## Pricing
-
-The pricing is available [here](https://graphhopper.com/#pricing) or with all details about monthly/annually [in the dashboard](https://graphhopper.com/dashboard/).
-
 ## API Clients and Examples
 
  * [JavaScript client](https://github.com/graphhopper/directions-api-js-client) - try the [live examples](https://graphhopper.com/api/1/examples/)
@@ -95,15 +91,6 @@ Read the [terms of services](https://graphhopper.com/terms.html) carefully and m
 
 Please read more about how to attribution the usage of the GraphHopper
 Directions API [here](./attribution).
-
-# HTTP Headers
-
-HTTP header key | 	Description
-:---------------|:-------------
-X-RateLimit-Limit 	   | Your current daily credit limit
-X-RateLimit-Remaining | 	Your remaining credits until the reset
-X-RateLimit-Reset 	   | The number of seconds that you have to wait before a reset of the credit count is done
-X-RateLimit-Credits 	 | The credit costs for this request. Note, it could be a decimal and even negative number, e.g. when an async request failed.
 
 # HTTP Error codes
 
