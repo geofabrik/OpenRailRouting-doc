@@ -8,11 +8,7 @@ between all locations with our fast Matrix API.
 The GraphHopper Directions API consists of the following parts:
 
  * the [Routing API](./routing.md), 
- * the [Route Optimization API](./route-optimization.md),
- * the [Isochrone API](./isochrone.md),
  * the [Map Matching API](./map-matching.md),
- * the [Matrix API](./matrix.md) and 
- * the [Geocoding API](./geocoding.md).
 
 ## How to Start
 
@@ -21,12 +17,6 @@ The GraphHopper Directions API consists of the following parts:
  3. To increase your query limits for production you pay online within a few minutes via credit card or debit advice.
 
 You can see the Routing and Geocoding API in action at [GraphHopper Maps](https://graphhopper.com/maps). You can see the Route Optimization API in action in the [route editor](https://graphhopper.com/blog/2015/07/21/graphhoppers-new-route-optimization-editor/) available in the [dashboard](https://graphhopper.com/#directions-api), the route optimization uses the Matrix API under the hood.
-
-## Problems or Questions?
-
-If you have problems or questions please see the [FAQ.md](FAQ.md) or [contact us](https://graphhopper.com/#contact).
-
-Or search [our public forum](https://discuss.graphhopper.com/c/directions-api).
 
 ## API Clients and Examples
 
@@ -53,39 +43,11 @@ To get informed about the newest features and development follow us at [twitter]
 
 The Routing API is documented [here](./routing.md).
 
-# [Route Optimization API](./route-optimization.md)
-
-[![Vehicle Routing Example](./img/vrp-example.png)](./route-optimization.md)
-
-The Route Optimization API is documented [here](./route-optimization.md).
-
-# [Isochrone API](./isochrone.md)
-
-[![Isochrone Example](./img/isochrone-example.png)](./isochrone.md)
-
-The Isochrone API is documented [here](./isochrone.md)
-
 # [Map Matching API](./map-matching.md)
 
 [![Map Matching Example](./img/map-matching-example.png)](./map-matching.md)
 
 The Map Matching API is documented [here](./map-matching.md)
-
-# [Matrix API](./matrix.md)
-
-[![Matrix Example](./img/matrix-example.png)](./matrix.md)
-
-The Matrix API is documented [here](./matrix.md)
-
-# [Geocoding API](./geocoding.md)
-
-[![Geocoding Example](./img/geocoding-example.png)](./geocoding.md)
-
-The Geocoding API is documentation [here](./geocoding.md).
-
-# [Terms of Services](https://graphhopper.com/terms.html)
-
-Read the [terms of services](https://graphhopper.com/terms.html) carefully and make sure your user are agreeing to be bound by GraphHopper's Terms of Use too.
 
 # [Attribution](./attribution.md)
 

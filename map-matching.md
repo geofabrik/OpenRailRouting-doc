@@ -67,13 +67,6 @@ Parameter            | Default | Description
 csv_output.separator | ;       | column separator
 
 
-### Limits and Counts
-
-The cost for one request depends on the number of GPS location and is documented [here](FAQ.md).
-
-One request should not exceed the Map Matching API location limit depending on the package, 
-see the pricing in our dashboard.
-
 ### CSV Output
 
 The map matching API supports a CSV output format. The CSV files contain two columns `latitude` and `longitude`.
