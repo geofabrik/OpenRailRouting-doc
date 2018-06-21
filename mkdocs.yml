@@ -1,6 +1,6 @@
-site_name: GraphHopper Directions API Documentation
-site_description: GraphHopper Directions API
-site_favicon: https://graphhopper.com/favicon.ico
+site_name: Railway Routing API Documentation
+site_description: Railway Routing API
+#site_favicon: https://graphhopper.com/favicon.ico
 repo_url: https://github.com/geofabrik/railway-routing-api/
 docs_dir: .
 include_next_prev: False
