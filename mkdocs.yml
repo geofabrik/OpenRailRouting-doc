@@ -16,11 +16,8 @@ pages:
 - Attribution: attribution.md
 - Vehicles: supported-vehicle-profiles.md
 #- FAQ: FAQ.md
-#extra_css: 
-#  - https://www.graphhopper.com/wp-content/themes/graphhopper/css/uikit.min.css
-#  - https://www.graphhopper.com/wp-content/themes/graphhopper/css/gh.css
-#  - css/custom.css
-#  - css/style.css
+extra_css: 
+  - css/white_background.css
 #extra_javascript:
 #  - js/custom.js
 # almost all other themes use Google Fonts
