@@ -30,10 +30,7 @@ to the digital road network to clean up this data or attach data to it.
 
 ### Input format
 
-The supported input formats are [GPX 1.1](http://www.topografix.com/GPX/1/1/) (application/gpx+xml) and a custom CSV format. A json format is under work.
-
-The CSV file should have two columns called "latitude" and "longitude". Their
-order does not matter. The file must have column headers.
+The supported input formats are [GPX 1.1](http://www.topografix.com/GPX/1/1/) (`application/gpx+xml`) and a custom CSV format (`text/csv`). A json format is under work.
 
 ### Parameters
 
@@ -44,7 +41,7 @@ Parameter   | Default | Description
 gps_accuracy| 40      | The precision of the GPS locations in meters, from minimum of 5 to maximum 100.
 vehicle     | car     | The vehicle for which the route should be snapped. See [here](./supported-vehicle-profiles.md) for all options.
 locale      | en      | The locale of the resulting instructions
-type        | json    | The output format, can be gpx or json.
+type        | json    | The output format, can be gpx, json or csv.
 debug       | false   | If true, the output will be formated.
 
 Further parameters from the [Routing API](routing.md#parameters) do apply here too.
@@ -58,6 +55,15 @@ Parameter           | Default | Description
 csv_input.separator | ;       | column separator
 csv_input.quoteChar | "       | quotation character
 
+The CSV file must have column headers.
+
+Following column headers are expected:
+
+* `latitude`
+* `longitude`
+
+Any other columns will be ignored.
+
 #### CSV Output
 
 Following additional parameter is supported for the CSV output format:
@@ -66,6 +72,16 @@ Parameter            | Default | Description
 :--------------------|:--------|:-----------
 csv_output.separator | ;       | column separator
 
+### CSV Input
+
+The CSV file must have column headers.
+
+Following column headers are expected:
+
+* `latitude`
+* `longitude`
+
+Any other columns will be ignored.
 
 ### CSV Output
 
