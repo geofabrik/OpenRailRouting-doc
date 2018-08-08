@@ -42,6 +42,7 @@ gps_accuracy| 40      | The precision of the GPS locations in meters, from minim
 vehicle     | car     | The vehicle for which the route should be snapped. See [here](./supported-vehicle-profiles.md) for all options.
 locale      | en      | The locale of the resulting instructions
 type        | json    | The output format, can be gpx, json or csv.
+fill_gaps   | false   | If false, return an error if the distance between two subsequent points is too large. If true, try a normal routing request to fill the gap.
 debug       | false   | If true, the output will be formated.
 
 Further parameters from the [Routing API](routing.md#parameters) do apply here too.
