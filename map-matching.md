@@ -45,7 +45,6 @@ type        | json    | The output format, can be gpx, json or csv.
 fill_gaps   | false   | If false, return an error if the distance between two subsequent points is too large. If true, try a normal routing request to fill the gap.
 debug       | false   | If true, the output will be formated.
 max_visited_nodes | 3000 | The maximum number of nodes in graph which should be visited until a request fails.
-routing.non_ch.max_waypoint_distance | 1000 | The maximal permitted distance for routing requests used if the map matching fails back to routing (only if `fill_gaps=true` is set).
 
 Further parameters from the [Routing API](routing.md#parameters) do apply here too.
 
