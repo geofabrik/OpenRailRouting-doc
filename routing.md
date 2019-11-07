@@ -2,23 +2,21 @@
 
 ### Endpoint
 
-The endpoint is `https://graphhopper.com/api/[version]/route`
+The endpoint is `https://HOSTNAME/route`
 
 You get an example response via:
 
-`curl "https://graphhopper.com/api/1/route?point=51.131,12.414&point=48.224,3.867&vehicle=car&locale=de&key=[YOUR_KEY]"`
-
-Where you need to replace the key with your own
+`curl "https://[HOSTNAME]/route?point=51.131,12.414&point=48.224,3.867&vehicle=car&locale=de"`
 
 ### Introduction
 
 ![Routing API](./img/routing-example.png)
 
-The Routing API is part of the [GraphHopper Directions API](https://graphhopper.com/#directions-api). Routing is the process of finding the 'best' path(s) between two or more points, where best depends on the vehicle and use case. With our API you have a fast and solid way to find this best path.
+Routing is the process of finding the 'best' path(s) between two or more points, where best depends on the vehicle and use case. With our API you have a fast and solid way to find this best path.
 
-### API Clients and Examples
+### API Clients
 
-See the [clients](./index.md#api-clients-and-examples) section in the main document and [live examples](https://graphhopper.com/api/1/examples/#routing).
+See the [clients](./index.md#api-clients-and-examples) section in the main document.
 
 ### Parameters
 

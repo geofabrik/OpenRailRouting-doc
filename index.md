@@ -1,22 +1,13 @@
-# GraphHopper Directions API
+# OpenRailRouting REST API
 
-With the [ GraphHopper Directions API](https://graphhopper.com/#directions-api) you get reliable and fast web services for routing and more
+With the OpenRailRouting REST API you get reliable and fast web services for routing and more
 with world wide coverage. We offer A-to-B routing via the Routing API optionally with turn instructions and elevation data as well as 
-route optimization with various constraints like time window and capacity restrictions. Also it is possible to get all distances 
-between all locations with our fast Matrix API.
+route optimization with various constraints like time window and capacity restrictions.
 
-The GraphHopper Directions API consists of the following parts:
+The OpenRailRouting REST API consists of the following parts:
 
  * the [Routing API](./routing.md), 
  * the [Map Matching API](./map-matching.md),
-
-## How to Start
-
- 1. To use the Directions API you need an API key. Get it for free [here](https://graphhopper.com/#directions-api).
- 2. Read the documentation below or try the examples in our dashboard.
- 3. To increase your query limits for production you pay online within a few minutes via credit card or debit advice.
-
-You can see the Routing and Geocoding API in action at [GraphHopper Maps](https://graphhopper.com/maps). You can see the Route Optimization API in action in the [route editor](https://graphhopper.com/blog/2015/07/21/graphhoppers-new-route-optimization-editor/) available in the [dashboard](https://graphhopper.com/#directions-api), the route optimization uses the Matrix API under the hood.
 
 ## API Clients and Examples
 
@@ -26,17 +17,6 @@ You can see the Routing and Geocoding API in action at [GraphHopper Maps](https:
 
 Let us know your language requirements!
   
-**Examples and Applications and Community supported clients**:
-
- * [Showcases](https://www.graphhopper.com/showcases/) from our customers
- * A community developed Swift client for the [Geocoding API](https://github.com/rmnblm/GraphHopperGeocoder) and [Routing API](https://github.com/rmnblm/GraphHopperRouting)
-
-Do not hesitate to share your websites, apps or API clients with us!
-
-## Keep up-to-date
-
-To get informed about the newest features and development follow us at [twitter](https://twitter.com/graphhopper/) or our [blog](https://graphhopper.com/blog/). Furthermore you can watch [this git repository](https://github.com/graphhopper/directions-api) of this documentation, sign up at our [dashboard](https://graphhopper.com/dashboard/) to get the newsletter or sign up at [our forum](https://discuss.graphhopper.com/c/directions-api). Pick the channel you like most.
-
 # [Routing API](./routing.md)
 
 [![Routing Example](./img/routing-example.png)](./routing.md)
