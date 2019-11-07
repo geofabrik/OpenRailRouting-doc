@@ -1,7 +1,3 @@
-# GraphHopper Directions API
+# OpenRailRouting REST API
 
-With the [GraphHopper Directions API](https://graphhopper.com/#directions-api) you get a reliable and fast routing service with world wide coverage. 
-
-# [New home for the documentation](https://graphhopper.com/api/1/docs)
-
-Submit your issues [here](https://github.com/graphhopper/directions-api/issues) or discuss [in our forum](https://discuss.graphhopper.com/c/directions-api)
+This repository contains the documentation of the REST API of [OpenRailRouting](https://github.com/geofabrik/OpenRailRouting). The documentation is based on the old documentation of the [GraphHopper Directions API](https://github.com/graphhopper/directions-api/tree/9c21bee498b01d68404e00072db2147abbbcfefa).
