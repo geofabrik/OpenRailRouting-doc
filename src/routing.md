@@ -26,7 +26,6 @@ Parameter   | Default | Description
 :-----------|:--------|:-----------
 point       | -       | Specifiy multiple points for which the route should be calculated. The order "latitude,longitude" is important. Specify at least two points. The maximum number depends on the selected package.
 locale      | en      | The locale of the resulting turn instructions. E.g. `pt_PT` for Portuguese or `de` for German.
-optimize    | `false` | If `false` the order of the locations will be identical to the order of the point parameters. If you have more than 2 points you can set this optimize parameter to `true` and the points will be sorted regarding the minimum overall time - e.g. suiteable for sightseeing tours or salesman. Keep in mind that the location limit of the [Route Optimization API](./route-optimization.md) applies and the [credit costs](FAQ.md#what-is-one-credit) are higher! Note to all customers with a self-hosted license: this parameter is only available if your package includes the Route Optimization API.
 instructions| `true`  | If instruction should be calculated and returned
 vehicle     | car     | The vehicle for which the route should be calculated. Other vehicle profiles are listed [here](./supported-vehicle-profiles.md).
 elevation   | `false` | If `true` a third dimension - the elevation - is included in the polyline or in the GeoJson. IMPORTANT: If enabled you have to use a modified version of the decoding method or set points_encoded to `false`. See the points_encoded attribute for more details. Additionally a request can fail if the vehicle does not support elevation. See the features object for every vehicle.
@@ -52,8 +51,6 @@ gpx.waypoints | `false` | Include the `<wpt>` tag in gpx result
 Enable turn restrictions and unlock further flexible features via `ch.disable=true`.
 
 Please note that changing the algorithm costs more than one credit, see [the FAQ](./FAQ.md) for more details.
-
-Furthermore `optimize=true` is not yet possible in combination with `ch.disable=true`
 
 Parameter        | Default    | Description
 :----------------|:-----------|:-----------
@@ -94,7 +91,6 @@ paths[0].instructions[0].interval             | An array containing the first an
 paths[0].instructions[0].sign                 | A number which specifies the sign to show e.g. 2 for a right turn.<br>KEEP_LEFT=-7<br>TURN_SHARP_LEFT = -3<br>TURN_LEFT = -2<br>TURN_SLIGHT_LEFT = -1<br>CONTINUE_ON_STREET = 0<br>TURN_SLIGHT_RIGHT = 1<br>TURN_RIGHT = 2<br>TURN_SHARP_RIGHT = 3<br>FINISH = 4<br>REACHED_VIA = 5<br>USE_ROUNDABOUT = 6<br>KEEP_RIGHT=7<br>implement some default for future changes
 paths[0].instructions[0].exit_number          | [optional] Only available for USE_ROUNDABOUT instructions. The count of exits at which the route leaves the roundabout.
 paths[0].instructions[0].turn_angle           | [optional] Only available for USE_ROUNDABOUT instructions. The radian of the route within the roundabout: `0 < r < 2*PI` for clockwise and `-2PI < r < 0` for counterclockwise transit. `NaN` if the direction of rotation is undefined.
-paths[0].points_order     | This zero-based array is only returned if the `optimize` parameter is specified and contains the used order of the input `point` parameters i.e. the start, via and end points.
 
 ### Example output for the case type=json
 
