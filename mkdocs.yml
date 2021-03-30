@@ -2,9 +2,8 @@ site_name: Railway Routing API Documentation
 site_description: Railway Routing API
 #site_favicon: https://graphhopper.com/favicon.ico
 repo_url: https://github.com/geofabrik/railway-routing-api/
-docs_dir: .
-include_next_prev: False
-pages:
+docs_dir: src
+nav:
 - Overview: index.md
 - API parts:
   - Routing API: routing.md
@@ -21,5 +20,6 @@ extra_css:
 #extra_javascript:
 #  - js/custom.js
 # almost all other themes use Google Fonts
-theme: mkdocs
-theme_dir: custom_theme
+theme:
+  name: mkdocs
+  custom_dir: custom_theme
